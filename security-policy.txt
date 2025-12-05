@@ -1,1 +1,2 @@
 Don't log in company's account in your home
+Password must be 12 characters, contain number, uppercase letter and special character
