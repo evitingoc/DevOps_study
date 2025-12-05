@@ -1,1 +1,1 @@
-Git Study with Gemini
+This project need better security
