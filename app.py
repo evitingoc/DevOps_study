@@ -1,3 +1,1 @@
-print('App started')
-# Remove database password
-print('App finished')
+App started
