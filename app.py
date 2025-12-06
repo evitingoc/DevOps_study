@@ -1,1 +1,1 @@
-App started
+App finished
