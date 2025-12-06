@@ -1,3 +1,3 @@
 App started
-DB_PASSWORD = '123'
+# Remove password 
 App finished
