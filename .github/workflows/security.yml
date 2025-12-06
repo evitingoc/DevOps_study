@@ -11,7 +11,7 @@ jobs:
         uses: action/checkout@v3
 
       - name: Say Hello
-        uses: echo "The security Patrol is scanning commit ${{ github.sha }}..."
+        run: echo "The security Patrol is scanning commit ${{ github.sha }}..."
 
       - name: List files
-        uses: ls -lah
+        run: ls -lah
