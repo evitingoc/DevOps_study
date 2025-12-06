@@ -3,15 +3,15 @@ name: Security Patrol
 on: [push, pull_request]
 
 jobs:
-  basic-check:
+  security-scan:
     runs-on: ubuntu-latest
+      steps:
+        - name: Checkout code
+          uses: actions/checkout@v4
+          with:
+            fetch-depth: 0
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Say Hello
-        run: echo "The security Patrol is scanning commit ${{ github.sha }}..."
-
-      - name: List files
-        run: ls -lah
+        - name: Gitleaks Scanner
+          uses: gitleaks/gitleaks-action@v2
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
