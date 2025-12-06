@@ -1,1 +1,2 @@
 AWS_KEY='AKIAIOSFODNN7EXAMPLE'
+password='abc123'
